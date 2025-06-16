@@ -1,0 +1,19 @@
+// Write a recursive function to print first N odd natural numbers in reverse order 
+#include<stdio.h>
+#include<conio.h>
+    void rev_odd(int n)
+    {   
+        if(n==0)
+        return;
+        printf("%d  ",2*n-1); 
+        rev_odd(n-1);
+    }
+
+
+
+    void main()
+{
+        rev_odd(10);
+        
+    getch();
+}
