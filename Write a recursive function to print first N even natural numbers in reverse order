@@ -1,0 +1,16 @@
+// Write a recursive function to print first N even natural numbers in reverse order 
+#include<stdio.h>
+#include<conio.h>
+    void rev_even(int n)
+    {
+        if(n==0)    return;
+        printf("%d  ",2*n);
+        rev_even(n-1);
+    }
+
+    void main()
+{
+        rev_even(5);
+        
+    getch();
+}
