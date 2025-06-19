@@ -1,0 +1,17 @@
+//  Write a recursive function to print squares of first N natural numbers 
+#include<stdio.h>
+#include<conio.h>
+void square(int n)
+{
+    if (n==0) return;
+    square(n-1);
+    printf("%d  ",n*n);
+
+}
+
+    void main()
+{
+        square(15);
+        
+    getch();
+}
