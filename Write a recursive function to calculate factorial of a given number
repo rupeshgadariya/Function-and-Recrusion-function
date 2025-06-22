@@ -1,0 +1,16 @@
+// Write a recursive function to calculate factorial of a given number
+#include<stdio.h>
+#include<conio.h>
+int fac(int n)
+{
+    if(n==1)    return 1;
+
+    return n*fac(n-1);
+}
+
+    void main()
+{
+       printf("%d",fac(6)); 
+        
+    getch();
+}
