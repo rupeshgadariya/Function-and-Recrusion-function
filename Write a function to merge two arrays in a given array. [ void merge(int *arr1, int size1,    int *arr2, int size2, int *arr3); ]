@@ -1,0 +1,28 @@
+/*   Write a function to merge two arrays in a given array. [ void merge(int *arr1, int size1,
+   int *arr2, int size2, int *arr3); ]  */
+#include<stdio.h>
+ 
+ void merge( int *arr_1, int size1, int *arr_2, int size2, int *arr_3)
+ {
+    int i=0;
+
+    for(i=0; i < size1; i++)
+     arr_3[i] = arr_1[i];
+
+    for(int j=0; j < size2; i++,j++)
+     arr_3[i] = arr_2[j];
+   
+      
+
+ }
+
+    int main()
+{
+        int ar[5]={45,12,34,12,48}, arr[5]={5,2,6,9,8}, arrr[10];
+     merge(ar,5,arr,5,arrr);
+        for(int i = 0; i<10; i++)
+        printf("%d   ",arrr[i]);
+        
+        
+    return 0;
+}
